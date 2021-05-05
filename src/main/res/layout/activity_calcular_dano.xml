@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalcularDano">
+
+    <Button
+        android:id="@+id/Operador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/Operador2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <Button
+        android:id="@+id/Operador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="2"
+        app:layout_constraintEnd_toStartOf="@+id/Operador3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Operador1"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <Button
+        android:id="@+id/Operador3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="47dp"
+        android:text="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Operador2"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <Button
+        android:id="@+id/Operador4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="23dp"
+        android:text="4"
+        app:layout_constraintEnd_toStartOf="@+id/Operador5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Operador1" />
+
+    <Button
+        android:id="@+id/Operador5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="18dp"
+        android:text="5"
+        app:layout_constraintEnd_toStartOf="@+id/Operador6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Operador4"
+        app:layout_constraintTop_toBottomOf="@+id/Operador2" />
+
+    <Button
+        android:id="@+id/Operador6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="37dp"
+        android:text="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Operador5"
+        app:layout_constraintTop_toBottomOf="@+id/Operador3" />
+
+    <Button
+        android:id="@+id/Operador7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="31dp"
+        android:text="7"
+        app:layout_constraintEnd_toStartOf="@+id/Operador8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Operador4" />
+
+    <Button
+        android:id="@+id/Operador8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="27dp"
+        android:text="8"
+        app:layout_constraintEnd_toStartOf="@+id/Operador9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Operador7"
+        app:layout_constraintTop_toBottomOf="@+id/Operador5" />
+
+    <Button
+        android:id="@+id/Operador9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:text="9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Operador8"
+        app:layout_constraintTop_toBottomOf="@+id/Operador6" />
+
+    <Button
+        android:id="@+id/Suma"
+        android:layout_width="69dp"
+        android:layout_height="49dp"
+        android:text="suma"
+        app:layout_constraintEnd_toStartOf="@+id/Resta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="531dp" />
+
+    <Button
+        android:id="@+id/Resta"
+        android:layout_width="67dp"
+        android:layout_height="46dp"
+        android:text="resta"
+        app:layout_constraintEnd_toStartOf="@+id/Multiplicar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Suma"
+        tools:layout_editor_absoluteY="534dp" />
+
+    <Button
+        android:id="@+id/Multiplicar"
+        android:layout_width="63dp"
+        android:layout_height="48dp"
+        android:text="multiplicacion"
+        app:layout_constraintEnd_toStartOf="@+id/Dividir"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Resta"
+        tools:layout_editor_absoluteY="531dp" />
+
+    <Button
+        android:id="@+id/Dividir"
+        android:layout_width="69dp"
+        android:layout_height="46dp"
+        android:text="division"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Multiplicar"
+        tools:layout_editor_absoluteY="534dp" />
+
+    <Button
+        android:id="@+id/Resultado"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="633dp" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="93dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@+id/Operador8"
+        tools:layout_editor_absoluteX="173dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="148dp"
+        android:text="Calculo"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
